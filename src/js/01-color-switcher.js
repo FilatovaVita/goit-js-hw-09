@@ -1,4 +1,3 @@
-
 const ref = {
   startBtn: document.querySelector(`[data-start]`),
   stopBtn: document.querySelector(`[data-stop]`),
@@ -17,6 +16,7 @@ ref.startBtn.addEventListener("click", () => {
 
 ref.stopBtn.addEventListener("click", () => {
   clearInterval(timerId); 
+  ref.startBtn.disabled = false;
 });
 
 
